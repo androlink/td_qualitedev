@@ -27,6 +27,12 @@ public class Personne implements Entree{
     public void setFonction(String fonction){
         this.fonction=fonction;
     }
+    public void setGenre(Genre g){
+        this.genre=genre;
+    }
+    public Genre getGenre() {
+        return genre;
+    }
 
     @Override
     public String toString(Presentation p,Sens s) {
