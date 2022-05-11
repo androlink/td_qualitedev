@@ -1,4 +1,4 @@
-package test;
+package src.test;
 
 import src.entree.Genre;
 import src.entree.Personne;
