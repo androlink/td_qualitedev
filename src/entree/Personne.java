@@ -2,9 +2,9 @@ package src.entree;
 
 public class Personne implements Entree{
 
-    String nom;
+    String nom="mac";
     //fixme tableau to arrayList
-    String[] prenom=new String[2];
+    String[] prenom={"big"};
     Genre genre;
     Personne conjoin;
     String societe;
@@ -12,10 +12,20 @@ public class Personne implements Entree{
 
     public Personne(){
     }
+    public Personne(String nom,String[] prenom){
+        this.nom=nom;
+        this.prenom=prenom;
+    }
 
     @Override
     public boolean recherche(String n) {
         return false;
+    }
+    void setSociete(String societe){
+        this.societe=societe;
+    }
+    void setFonction(String fonction){
+        this.fonction=fonction;
     }
 
     @Override
