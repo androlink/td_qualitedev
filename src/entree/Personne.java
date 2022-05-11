@@ -18,7 +18,8 @@ public class Personne implements Entree{
 
     @Override
     public boolean recherche(String n) {
-        return false;
+        for(int i = 0;i<prenom.length;i++)if(n.equals(prenom[i]))return true;
+        return n.equals(nom);
     }
     public void setSociete(Societe societe){
         this.societe=societe;
