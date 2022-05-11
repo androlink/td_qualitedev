@@ -6,7 +6,7 @@ public class Personne implements Entree{
     String[] prenom={"big"};
     Genre genre;
     Personne conjoin;
-    String societe;
+    Societe societe;
     String fonction;
 
     public Personne(){
@@ -20,7 +20,7 @@ public class Personne implements Entree{
     public boolean recherche(String n) {
         return false;
     }
-    public void setSociete(String societe){
+    public void setSociete(Societe societe){
         this.societe=societe;
     }
     public void setFonction(String fonction){
