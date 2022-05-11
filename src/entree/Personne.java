@@ -36,27 +36,26 @@ public class Personne implements Entree{
 
     @Override
     public String toString(Presentation p,Sens s) {
-        String nom="";
-        String prenoms="";
+
         String res="";
         switch (p) {
             case ABREGE -> {
-                for (int i = 0; i < prenom.length; i++) prenoms += prenom[i].toUpperCase().toCharArray()[0]+". ";
-                res=prenoms+nom;
+                for (int i = 0; i < prenom.length; i++) res += prenom[i].toUpperCase().toCharArray()[0]+". ";
+                res+=nom;
             }
             case SIMPLE -> {
                 res+=genre+". ";
                 res+=prenom[0]+" ";
-                for (int i = 1; i < prenom.length; i++) prenoms += prenom[i].toUpperCase().toCharArray()[0]+". ";
+                for (int i = 1; i < prenom.length; i++) res += prenom[i].toUpperCase().toCharArray()[0]+". ";
                 res+=nom+" ";
                 if(societe!=null)res+="("+societe+")";
             }
             case COMPLET -> {
                 res+=genre+". ";
-                for (int i = 0; i < prenom.length; i++) prenoms += prenom[i]+" ";
-                res+=nom+" ";
-                res+="societe "+societe;
-                res+="fonction"+fonction;
+                for (int i = 0; i < prenom.length; i++) res += prenom[i]+" ";
+                res+=nom+"\n";
+                res+="societe: "+societe+"\n";
+                res+="fonction: "+fonction;
             }
         }
         return res;
