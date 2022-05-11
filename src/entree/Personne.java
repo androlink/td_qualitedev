@@ -21,10 +21,10 @@ public class Personne implements Entree{
     public boolean recherche(String n) {
         return false;
     }
-    void setSociete(String societe){
+    public void setSociete(String societe){
         this.societe=societe;
     }
-    void setFonction(String fonction){
+    public void setFonction(String fonction){
         this.fonction=fonction;
     }
 
