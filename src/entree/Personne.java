@@ -3,7 +3,6 @@ package src.entree;
 public class Personne implements Entree{
 
     String nom="mac";
-    //fixme tableau to arrayList
     String[] prenom={"big"};
     Genre genre;
     Personne conjoin;
