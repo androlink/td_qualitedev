@@ -14,7 +14,7 @@ public class Societe implements  Entree {
 
     @Override
     public boolean recherche(String n) {
-        return false;
+        return n.equals(raisonSociale);
     }
 
     @Override
